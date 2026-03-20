@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background-color: #07090f;
+  color: #94a3b8;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07090f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 2px;
+}
+
+/* ─── Container ─── */
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+/* ─── Section — more breathing room ─── */
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* ─── Typography scale ─── */
+h1 {
+  font-size: clamp(40px, 6vw, 74px);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.06;
+  color: #f1f5f9;
+}
+
+h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: #f1f5f9;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #e2e8f0;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #64748b;
+}
+
+/* ─── Gradient text ─── */
+.gradient-text {
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Section label ─── */
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #475569;
+}
+
+/* ─── Divider ─── */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.07), transparent);
+  border: none;
+  margin: 0 24px;
+}
+
+/* ─── Card ─── */
+.card {
+  background: rgba(255, 255, 255, 0.028);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  transition: background 0.35s ease, border-color 0.35s ease, transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.048);
+  border-color: rgba(59, 130, 246, 0.28);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* ─── Badge ─── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.22);
+  color: #60a5fa;
+}
+
+/* ─── Tag pill ─── */
+.tag {
+  display: inline-flex;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  color: #64748b;
+  white-space: nowrap;
+}
+
+/* ─── Buttons ─── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+
+.btn-white {
+  background: #ffffff;
+  color: #07090f;
+  border: none;
+}
+
+.btn-white:hover {
+  background: #e2e8f0;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.12);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #94a3b8;
+}
+
+.btn-ghost:hover {
+  border-color: rgba(255, 255, 255, 0.38);
+  color: #e2e8f0;
+  transform: translateY(-1px);
+}
+
+.btn-blue {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 11px 24px;
+  font-size: 14px;
+}
+
+.btn-blue:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+}
+
+/* ─── React Flow transparent bg ─── */
+.react-flow__pane,
+.react-flow__renderer,
+.react-flow__container,
+.react-flow__background {
+  background: transparent !important;
+}
+
+/* ─── Input focus ─── */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: rgba(59, 130, 246, 0.5) !important;
+  transition: border-color 0.25s ease;
+}
+
+/* ─── Animate bounce for scroll indicator ─── */
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1.8s ease-in-out infinite;
+}
+
+/* ─── Section header margin utility ─── */
+.section-header {
+  margin-bottom: 64px;
+}
