@@ -1,16 +1,22 @@
-# React + Vite
+# Jayesh Makhar — Automation & AI Workflow Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio site. It covers the automation services I offer, case studies of systems I've built, and the tools I use.
 
-Currently, two official plugins are available:
+## Sections
+- **Hero:** intro and what I build: intelligent automation systems and AI workflows
+- **Services:** AI automation, business-process automation, CRM automation, AI agents, API integrations, WhatsApp and multi-channel
+- **Case studies:** recruitment automation, Facebook ad generation, CRM lead reactivation, multi-channel CRM with a voice agent, WhatsApp customer support, EU policy scraping and more, each with an interactive workflow diagram
+- **Tech stack, About and Contact**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech stack
+React 19 · Vite · Framer Motion (animations) · React Flow (`@xyflow/react`, workflow diagrams) · Headless UI · React Icons
 
-## React Compiler
+## Run locally
+```bash
+npm install
+npm run dev      # http://localhost:5173
+npm run build    # production build in dist/
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## License
+MIT, see [LICENSE](LICENSE).
